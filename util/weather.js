@@ -2,8 +2,8 @@ const axios = require('axios');
 
 const getCords = require('./geocode');
 
-//Dark Sky API key
-const token = '828787822231f6ccde1ddf1e4e81eb54';
+//Your Dark Sky API key
+const token = 'XXXXXXXXXXX';
 
 function setForecastIcon(icon) {
 

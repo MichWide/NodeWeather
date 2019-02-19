@@ -1,7 +1,7 @@
 const axios = require('axios');
 
-//Locationiq API key
-const token = '457771117f5e0b';
+//Your Locationiq API key
+const token = 'XXXXXX';
 
 /**
  * Returns latitude and longitude for given location
