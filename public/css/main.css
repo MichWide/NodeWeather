@@ -1,0 +1,107 @@
+@font-face {
+    font-family: web-aileron;
+    src: url(/font/TypoPRO-Aileron-Light.ttf);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #f3f3f3;
+    font-size: 16px;
+}
+
+/**
+Header
+**/
+
+header#main-header {
+    display: inline-block;
+}
+
+#logo {
+    color: #5a5858;
+    text-align: center;
+    font-size: 3em;
+    font-family: web-aileron;
+    margin: 20px auto;
+}
+
+#logo a {
+    cursor: pointer;
+}
+
+#logo a:visited {
+    color: #5a5858;
+}
+
+#logo a:hover {
+    text-decoration: none;
+}
+
+.green {
+    color: green;
+}
+
+/**
+Search box
+**/
+
+#search-box {
+    max-width: 500px;
+    margin: 50px auto 0;
+}
+
+input#locationInput {
+    display: inline;
+    max-width: 70%;
+}
+
+#search-box button.btn {
+    margin-bottom: 5px;
+}
+
+/**
+Results
+**/
+
+.col-md-7.results {
+    letter-spacing: 0.5px;
+}
+
+.results p {
+    margin-left: 10px;
+    text-align: left !important;
+}
+
+.place-name {
+    font-size: 2em;
+}
+
+#forecast-icon {
+    display: flex;
+    position: relative;
+    font-size: 5em;
+    align-items: center;
+    justify-content: center;
+}
+
+#forecast-icon i[class*="night"] {
+    color: #27048c;
+}
+
+#forecast-icon i[class*="day"] {
+    color: rgb(255, 217, 0);
+}
+
+#forecast-icon i[class*="snow"],
+#forecast-icon i[class*="windy"] {
+    color: rgb(0, 174, 255);
+}
+
+#forecast-icon i[class*="rain"],
+#forecast-icon i[class*="sleet"] {
+    color: rgb(9, 62, 238);
+}

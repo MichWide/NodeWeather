@@ -1,0 +1,15 @@
+<%- include('partials/header'); -%>
+    <main>
+        <div id="search-box" class="card text-center">
+            <h5 class="card-header">Search for a location</h5>
+            <div class="card-body">
+                <form action="/weather" method="GET">
+                    <div class="form-group">
+                        <input type="text" name="location" id="locationInput" class="form-control" placeholder="What's your city?">
+                        <button type="submit" class="btn btn-primary">Submit!</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <%- include('partials/footer'); -%>

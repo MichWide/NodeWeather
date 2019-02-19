@@ -1,0 +1,44 @@
+<%- include('partials/header'); -%>
+<main>
+    <div id="search-box" class="card text-center">
+        <h5 class="card-header">Your results:</h5>
+        <div class="card-body ">
+            <div class="row">
+                <div class="col-md-7 results">
+                    <p class="place-name">
+                        <%= location %>
+                    </p>
+                    <p>
+                        <i class="wi wi-thermometer"></i>
+                        Temperature:
+                        <%= temperature %>
+                        <i class="wi wi-celsius"></i>
+                    </p>
+                    <p>
+                        <i class="wi wi-barometer"></i>
+                        Pressure:
+                        <%= pressure %>
+                    </p>
+                    <p>
+                        <i class="wi wi-humidity"></i>
+                        Humidity:
+                        <%= humidity %>
+                    </p>
+                    <p>
+                        <i class="wi wi-strong-wind"></i>
+                        Wind:
+                        <%= windspeed %>km/h
+                    </p>
+                </div>
+                <div id="forecast-icon" class="col-md-5">
+                    <i class="wi wi-<%= icon %>"></i>
+                    <!-- <form action="/setDefault" method="post">
+                            <input type="hidden" name="defaultLocation" value="<%= location %>" />
+                            <button class="btn btn-primary" type="submit">Set as default</button>
+                        </form> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<%- include('partials/footer'); -%>
